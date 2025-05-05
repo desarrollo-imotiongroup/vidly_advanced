@@ -10,4 +10,4 @@ require('./startup/validation')();
 require('./startup/prod')(app);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => winston.info('Connecting to PORT:', PORT));
+app.listen(PORT, () => winston.info(`Connecting to PORT: ${PORT}`));
