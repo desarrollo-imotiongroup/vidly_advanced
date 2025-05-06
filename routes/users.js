@@ -5,7 +5,7 @@ const express = require('express');
 const _ = require('lodash');
 const jwt = require('jsonwebtoken');
 const config = require('config');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const router = express.Router();
 
 /// GET users
