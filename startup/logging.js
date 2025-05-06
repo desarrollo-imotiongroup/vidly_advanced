@@ -1,5 +1,5 @@
 const winston = require('winston');
-require('winston-mongodb');
+// require('winston-mongodb');
 
 module.exports = function () {
     winston.exceptions.handle(
@@ -21,7 +21,7 @@ module.exports = function () {
     }));
     
     winston.add(new winston.transports.MongoDB({
-        db: 'mongodb://localhost/playground',
+        db: process.env.MONGO_URI,
         level: 'info'
     }));
 
