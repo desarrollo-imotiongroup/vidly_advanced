@@ -20,9 +20,9 @@ module.exports = function () {
         )
     }));
     
-    winston.add(new winston.transports.MongoDB({
-        db: process.env.MONGO_URI,
-        level: 'info'
-    }));
+    // winston.add(new winston.transports.MongoDB({
+    //     db: process.env.MONGO_URI,
+    //     level: 'info'
+    // }));
 
 }
